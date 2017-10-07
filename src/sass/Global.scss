@@ -13,9 +13,16 @@ a, a:focus, a:hover {
 }
 
 /////////// CLASS GLOBALS ///////////
+// Links and Navigation
 .nav-links {
 	color: inherit;
-	font-family: $font-secondary;
-	font-weight: $font-light;
+	font-family: $font-main;
+	font-weight: $font-bold;
 	text-decoration: none;
+}
+
+// App Bar
+.app-bar-title {
+	font-family: $font-title;
+	margin: 0;		
 }

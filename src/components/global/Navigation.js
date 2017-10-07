@@ -25,7 +25,7 @@ export default class Nav extends Component {
 		return(
 			<div>
 				<AppBar
-					title="Bellevue Farmers Market"
+					title={<h2 className="app-bar-title">Bellevue Farmers Market</h2>}
 					className="app-bar"
 					onLeftIconButtonTouchTap={this._toggle}
 				/>
