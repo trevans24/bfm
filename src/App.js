@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-// components
+//////// COMPONENTS & SCREENS ////////
 import Nav from './components/global/Navigation';
+import Home from './screens/Home';
 
-// Styles
+//////// Styles ////////
 require('./css/Global.css');
 // THEME for Material UI
 const theme = getMuiTheme({
@@ -20,15 +21,20 @@ const theme = getMuiTheme({
   },
 });
 
+//////// ROUTER ////////
+const ReactRouter = require('react-router-dom');
+const Router = ReactRouter.BrowserRouter;
+const Route = ReactRouter.Route;
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <MuiThemeProvider muiTheme={theme} >
+      <Router>
+        <MuiThemeProvider muiTheme={theme} className="App">
           <Nav />
-          <h1>fuck you react</h1>
+          <Route path='/' component={Home} />
         </MuiThemeProvider>
-      </div>
+      </Router>
     );
   }
 }

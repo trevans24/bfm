@@ -5,5 +5,12 @@ body {
   margin: 0;
 }
 
+a, a:focus, a:hover {
+	color: inherit;
+	font-family: $font-secondary;
+	font-weight: $font-light;
+	text-decoration: none;
+}
+
 /////////// CLASS GLOBALS ///////////
 
