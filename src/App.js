@@ -4,6 +4,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 //////// COMPONENTS & SCREENS ////////
 import Nav from './components/global/Navigation';
+import Footer from './components/global/Footer';
 import Home from './screens/Home';
 
 //////// Styles ////////
@@ -11,12 +12,12 @@ require('./css/Global.css');
 // THEME for Material UI
 const theme = getMuiTheme({
   palette: {
-    primary1Color: '#8BC34A',
-    primary2Color: '#DCEDC8',
-    primary3Color: '#689F38',
+    primary1Color: '#689F38',
+    primary2Color: '#8BC34A',
+    primary3Color: '#DCEDC8',
     accent1Color: '#FF4081',
-    textColor: '#212121',
-    alternateTextColor: '#757575',
+    textColor: '#757575',
+    alternateTextColor: '#212121',
     shadowColor: '#BDBDBD'
   },
 });
@@ -30,9 +31,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <MuiThemeProvider muiTheme={theme} className="App">
-          <Nav />
-          <Route path='/' component={Home} />
+        <MuiThemeProvider muiTheme={theme}>
+          <div className="App">
+            <Nav />
+            <Route exact path='/' component={Home} />
+            <Footer />
+          </div>
         </MuiThemeProvider>
       </Router>
     );

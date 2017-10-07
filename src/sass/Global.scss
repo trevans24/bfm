@@ -13,4 +13,9 @@ a, a:focus, a:hover {
 }
 
 /////////// CLASS GLOBALS ///////////
-
+.nav-links {
+	color: inherit;
+	font-family: $font-secondary;
+	font-weight: $font-light;
+	text-decoration: none;
+}

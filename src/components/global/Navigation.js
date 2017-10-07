@@ -36,47 +36,42 @@ export default class Nav extends Component {
 					openSecondary={true}
 				>
 					<MenuItem>
-						<Link to="/">
+						<Link to="/" className="nav-link" >
 							The Market
 						</Link>
 					</MenuItem>
 					<MenuItem>
-						<Link to="/vendors">
+						<Link to="/vendors" className="nav-link" >
 							Vendors
 						</Link>
 					</MenuItem>
 					<MenuItem>
-						<Link to="/involved">
+						<Link to="/involved" className="nav-link" >
 							Get Involved
 						</Link>
 					</MenuItem>
 					<MenuItem>
-						<Link to="/resources">
+						<Link to="/resources" className="nav-link" >
 							Resources
 						</Link>
 					</MenuItem>
 					<MenuItem>
-						<Link to="/social">
-							Social
-						</Link>
-					</MenuItem>
-					<MenuItem>
-						<Link to="/donate">
+						<Link to="/donate" className="nav-link" >
 							Donate
 						</Link>
 					</MenuItem>
 					<MenuItem>
-						<Link to="/find">
+						<Link to="/find" className="nav-link" >
 							Find Us
 						</Link>
 					</MenuItem>
 					<MenuItem>
-						<Link to="/about">
+						<Link to="/about" className="nav-link" >
 							About Us
 						</Link>
 					</MenuItem>
 					<MenuItem>
-						<Link to="/blog">
+						<Link to="/blog" className="nav-link" >
 							Blog
 						</Link>
 					</MenuItem>
