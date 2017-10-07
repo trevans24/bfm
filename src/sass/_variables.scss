@@ -1,14 +1,11 @@
-// COLORS
-$primary-green: #40975B;
-$secondary-green: #184A28;
-$tertiary-green: #777E39;
-
-$primary-red: #974140;
-$secondary-red: #4A1111;
+// COLORS ////////////////////////////
+@import '_palette.sass';
 
 // FONTS /////////////////////////////
 // Font Family
-$font: 'Roboto', sans-serif;
+$font-main: 'Roboto', sans-serif;
+$font-secondary: 'Raleway', sans-serif;
+$font-title: 'Cinzel', serif;
 
 // Font Colors
 $nav-text-color: #FFFFFF;
@@ -16,6 +13,10 @@ $primary-text-color: #000000;
 $secondary-text-color: #974140;
 
 // Font Weights
+$font-extra-light: 100;
 $font-light: 200;
-$font-med: 300;
-$font-bold: 600;
+$font-regular: 300;
+$font-semibold: 400;
+$font-bold: 500;
+$font-extrabold: 600;
+$font-solidbold: 700;
