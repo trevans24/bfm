@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
+// Components
+
 export default class Home extends Component {
 	render() {
 		return(
-			<h1>Home Works</h1>
+			<div>
+				<h1>Home Works</h1>
+			</div>
 		)
 	}
 }

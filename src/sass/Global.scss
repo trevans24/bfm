@@ -12,7 +12,44 @@ a, a:focus, a:hover {
 	text-decoration: none;
 }
 
+h5 {
+	font-family: $font-secondary;
+	font-size: 1em;
+	font-weight: $font-semibold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+//////// TEXT ////////
+// Titles
+.title-text {
+	font-family: $font-title;
+	font-size: 1.2em;
+	letter-spacing: 0.5px;
+}
+
+.subtitle-text {
+	font-family: $font-title;
+	font-size: 0.8em;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+// Body
+.body-text {
+	font-family: $font-main;
+	font-size: 1em;
+	font-weight: $font-light;
+	letter-spacing: 0;
+}
+
+
 /////////// CLASS GLOBALS ///////////
+// General Styling
+.container-fluid {
+	width: 100vw;
+}
+
 // Links and Navigation
 .nav-links {
 	color: inherit;
@@ -23,6 +60,23 @@ a, a:focus, a:hover {
 
 // App Bar
 .app-bar-title {
+	color: $nav-text-color;
 	font-family: $font-title;
-	margin: 0;		
+}
+
+// Footer
+.footer {
+	background: $secondary-color-dark;
+	display: flex;
+	padding: 1% 0;
+	text-align: center;
+}
+
+.social-icon-img {
+	margin: 0 5%;
+}
+
+.social-icon-img:hover {
+	cursor: pointer;
+	opacity: 0.6;
 }

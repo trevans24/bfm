@@ -3,6 +3,10 @@ import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import '../../css/components/nav.css';
+// COMPONENTS
+import Title from './Title';
+
+// ROUTER LINK
 const Link = require('react-router-dom').Link;
 
 export default class Nav extends Component {
@@ -25,7 +29,7 @@ export default class Nav extends Component {
 		return(
 			<div>
 				<AppBar
-					title={<h2 className="app-bar-title">Bellevue Farmers Market</h2>}
+					title={<Title />}
 					className="app-bar"
 					onLeftIconButtonTouchTap={this._toggle}
 				/>
