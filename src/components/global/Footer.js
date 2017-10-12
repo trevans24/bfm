@@ -17,9 +17,9 @@ export default class Footer extends Component {
 				</div>
 				<div className="footer-contact">
 					<div className="social-icons" >
-						<img src={facebook} alt="facebook" height="64" width="64" className="social-icon-img"/>
-						<img src={instagram} alt="instagram" height="64" width="64" className="social-icon-img"/>
-						<img src={twitter} alt="twitter" height="75" width="75" className="twitter"/>
+						<a href="https://www.facebook.com/bellevueFM/"><img src={facebook} alt="facebook" height="64" width="64" className="social-icon-img"/></a>
+						<a href="https://www.instagram.com/bellevuefarmersmrkt/"><img src={instagram} alt="instagram" height="64" width="64" className="social-icon-img"/></a>
+						<a href="https://twitter.com/BellevueFarmMkt"><img src={twitter} alt="twitter" height="75" width="75" className="twitter"/></a>
 					</div>
 					<h5 className="footer-text">1717 Bellevue Way Northeast</h5>
 					<h5 className="footer-text">Bellevue, WA 98004</h5>

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
 // Components
+import Social from '../components/home/Social';
 
 export default class Home extends Component {
 	render() {
 		return(
 			<div>
-				<h1>Home Works</h1>
+				<Social />
 			</div>
 		)
 	}
