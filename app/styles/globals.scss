@@ -1,5 +1,4 @@
-@import "_variables";
-@import "_footer";
+@import "variables";
 
 /////////// HTML Globals ///////////
 body {
@@ -13,12 +12,20 @@ a, a:focus, a:hover {
 	text-decoration: none;
 }
 
-h4, h5 {
+h1 {
 	font-family: $font-secondary;
-	font-size: 1em;
+	font-size: 1.5em;
 	font-weight: $font-semibold;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+h5 {
+  font-family: $font-primary;
+  font-size: 1em;
+  font-weight: $font-light;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 //////// TEXT ////////
@@ -38,10 +45,17 @@ h4, h5 {
 
 // Body
 .body-text {
-	font-family: $font-main;
+	font-family: $font-primary;
 	font-size: 1em;
 	font-weight: $font-light;
 	letter-spacing: 0;
+}
+
+.footer-text {
+  font-family: $font-primary;
+  font-weight: $font-light;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 
@@ -54,7 +68,7 @@ h4, h5 {
 // Links and Navigation
 .nav-links {
 	color: inherit;
-	font-family: $font-main;
+	font-family: $font-primary;
 	font-weight: $font-bold;
 	text-decoration: none;
 }
