@@ -1,4 +1,5 @@
 @import "_variables";
+@import "_footer";
 
 /////////// HTML Globals ///////////
 body {
@@ -12,7 +13,7 @@ a, a:focus, a:hover {
 	text-decoration: none;
 }
 
-h5 {
+h4, h5 {
 	font-family: $font-secondary;
 	font-size: 1em;
 	font-weight: $font-semibold;
